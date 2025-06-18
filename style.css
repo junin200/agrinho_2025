@@ -1,0 +1,171 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50; /* Verde da natureza */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    color: #388E3C; /* Verde mais escuro */
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #DCE775;
+    padding-bottom: 10px;
+}
+
+.intro-section p {
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journey-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.step {
+    flex: 1;
+    min-width: 280px;
+    max-width: 45%; /* Para ter duas colunas em telas maiores */
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    height: 200px; /* Altura fixa para as imagens */
+}
+
+.step h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #558B2F; /* Outro tom de verde */
+    margin-bottom: 10px;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 50px;
+    background-color: #E8F5E9; /* Verde claro de fundo */
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.call-to-action h2 {
+    color: #2E7D32;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #66BB6A; /* Verde médio */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .journey-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .step img {
+        height: 180px;
+    }
+}
